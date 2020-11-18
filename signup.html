@@ -2,24 +2,27 @@
 <html>
 
 <head>
-    <title>Ai Club</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" >
-    
+  <title>Ai Club</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="./app.css">
+
+
 </head>
 
 <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="./index.html">AI Club</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+      aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="justify-content-end collapse navbar-collapse " id="navbarColor03">
-      <ul class="navbar-nav">
+
+    <div class="collapse navbar-collapse " id="navbarColor03">
+      <ul class="navbar-nav mr-auto collapse navbar-collapse justify-content-end">
         <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./aboutus.html">AboutUs</a>
@@ -30,11 +33,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Workshops</a>
         </li>
-        <li class="nav-item mr-2">
+        <li class="nav-item mr-1">
           <a class="nav-link" href="./mambers.html">Members</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-success mr-2" href="./signup.html" role="button">SignUp</a>
+          <a class="btn btn-outline-success mr-1" href="./signup.html" role="button">SignUp</a>
           <a class="btn btn-outline-success" href="./login.html" role="button">Login</a>
         </li>
       </ul>
@@ -42,39 +45,62 @@
   </nav>
 </div>
 
-<body class="bg-light">
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-12"></div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <form id="form" class="form-container" action="">
-                    <h1>SignUp Here!</h1>
-                    <div class="form-group">
-                        <label for="inEmail">Username</label>
-                        <input type="email" class="form-control" name="inusername" id="inusername" placeholder="Make this unique!">
-                    </div>
-                    <div class="form-group">
-                        <label for="inEmail">Email Address</label>
-                        <input type="email" class="form-control" name="inEmail" id="inEmail" placeholder="Your email here!">
-                    </div>
-                    <div class="form-group">
-                        <label for="inPassword">Password</label>
-                        <input type="password" class="form-control" name="inPassword" id="inPassword" placeholder="Keep it secret!">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="checkin" id="checkin"> Remember Me
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-success btn-block">Submit </button>
-                </form>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12"></div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
 
+<body class="bg-light">
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-12"></div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <form id="form" class="form-container" action="">
+          <h1>SignUp Here!</h1>
+          <div class="form-group">
+            <label for="inEmail">Username</label>
+            <input type="email" class="form-control" name="inusername" id="inusername" placeholder="Make this unique!">
+          </div>
+          <div class="form-group">
+            <label for="inEmail">Email Address</label>
+            <input type="email" class="form-control" name="inEmail" id="inEmail" placeholder="Your email here!">
+          </div>
+          <div class="form-group">
+            <label for="inPassword">Password</label>
+            <input type="password" class="form-control" name="inPassword" id="inPassword" placeholder="Keep it secret!">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="checkin" id="checkin"> Remember Me
+            </label>
+          </div>
+          <button id="button" type="submit" class="btn btn-success btn-block">Submit </button>
+        </form>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  
+  <script>
+    $(document).ready(function() {
+      $("#button").mouseover(function () {
+        $("#button").css("background-color", "#18bc9c");
+      });
+      $("#button").mouseout(function () {
+        $("#button").css("background-color", "#001a33");
+      });
+      $("#inEmail,#inPassword,#inusername").focus(function () {
+        $(this).css("background-color", "#ffffcc");
+      });
+      $("#inEmail,#inPassword,#inusername").blur(function () {
+        $(this).css("background-color", "#ccffdd");
+      });
+    });
+  </script>
+</body>
 </html>
